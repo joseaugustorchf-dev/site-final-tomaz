@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cardápio e Pedidos</title>
+    <link rel="stylesheet" href="estilo_do_tomas.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>🍽️ Marmitaria Sabor Magico</h1>
+
+        <section class="cliente">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+        </section>
+        <section class="cardapio">
+    <h2>Cardápio</h2>
+
+    <div class="item">
+        <div class="info-prato">
+            <span class="nome-item">Marmita de Bife Bovino Acebolado (com ovo)</span>
+            <button class="toggle-desc">▾</button>
+        </div>
+        <div class="descricao-prato">
+            Bife bovino acebolado com ovo frito, arroz branco,
+            feijão de caldo, batata frita e farofa do chef.
+        </div>
+        <span class="preco-item">R$ 21,90</span>
+        <input type="checkbox">
+    </div>
+
+    <div class="item">
+        <div class="info-prato">
+            <span class="nome-item">Marmita de Bife Bovino Acebolado</span>
+            <button class="toggle-desc">▾</button>
+        </div>
+        <div class="descricao-prato">
+            Bife bovino acebolado, arroz branco,
+            feijão de caldo, batata frita e farofa do chef.
+        </div>
+        <span class="preco-item">R$ 19,80</span>
+        <input type="checkbox">
+    </div>
+
+    <div class="item">
+        <div class="info-prato">
+            <span class="nome-item">Marmita de Peito de Frango Grelhado (com ovo)</span>
+            <button class="toggle-desc">▾</button>
+        </div>
+        <div class="descricao-prato">
+            Peito de frango grelhado com ovo frito, arroz branco,
+            feijão de caldo, batata frita e farofa do chef.
+        </div>
+        <span class="preco-item">R$ 19,80</span>
+        <input type="checkbox">
+    </div>
+
+    <div class="item">
+        <div class="info-prato">
+            <span class="nome-item">Marmita de Peito de Frango Grelhado Acebolado</span>
+            <button class="toggle-desc">▾</button>
+        </div>
+        <div class="descricao-prato">
+            Peito de frango grelhado acebolado, arroz branco,
+            feijão de caldo, batata frita e farofa do chef.
+        </div>
+        <span class="preco-item">R$ 16,90</span>
+        <input type="checkbox">
+    </div>
+
+    <div class="item">
+        <div class="info-prato">
+            <span class="nome-item">Frango à Parmegiana</span>
+            <button class="toggle-desc">▾</button>
+        </div>
+        <div class="descricao-prato">
+            Filé de peito de frango empanado, coberto com molho
+            de tomate caseiro e muçarela, acompanhado de arroz
+            branco e batata frita crocante.
+        </div>
+        <span class="preco-item">R$ 21,90</span>
+        <input type="checkbox">
+    </div>
+
+    <div class="item">
+        <div class="info-prato">
+            <span class="nome-item">Marmita de Strogonoff</span>
+            <button class="toggle-desc">▾</button>
+        </div>
+        <div class="descricao-prato">
+            Strogonoff de frango, arroz branco,
+            feijão de caldo, batata frita e farofa do chef.
+        </div>
+        <span class="preco-item">R$ 21,90</span>
+        <input type="checkbox">
+    </div>
+
+    <div class="item">
+        <div class="info-prato">
+            <span class="nome-item">Marmita de Bife Suíno</span>
+            <button class="toggle-desc">▾</button>
+        </div>
+        <div class="descricao-prato">
+            Bife suíno acebolado, arroz branco,
+            feijão de caldo, batata frita e farofa do chef.
+        </div>
+        <span class="preco-item">R$ 17,80</span>
+        <input type="checkbox">
+    </div>
+
+</section>
+        
+        <section class="observacao">
+            <label for="obs">Observações do pedido:</label>
+            <textarea id="obs" placeholder="Ex: sem cebola, pouco sal"></textarea>
+        </section>
+
+        <button class="enviar">
+            Enviar pedido pelo WhatsApp
+        </button>
+         <section class="amostras">
+        <h2>Amostras das Marmitas</h2>
+
+        <div class="galeria-marmitas">
+            <img src="imagem_tomaz1.jpg" alt="Marmita Tomaz - modelo 1">
+            <img src="imagem_tomaz2.jpg" alt="Marmita Tomaz - modelo 2">
+        </div>
+    </section>
+    </main>
+ 
+</body>
+</html>

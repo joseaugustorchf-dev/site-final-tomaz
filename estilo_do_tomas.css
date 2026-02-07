@@ -1,0 +1,160 @@
+* {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f9d423, #ffeb99);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 15px;
+}
+
+.container {
+    background-color: #ffffff;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cliente {
+    margin-bottom: 20px;
+}
+
+.cliente label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.cliente input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.cardapio h2 {
+    margin-bottom: 10px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.nome-item {
+    font-weight: bold;
+}
+
+.preco-item {
+    color: #555;
+    margin-right: 10px;
+}
+
+.enviar {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: #1ebe5d;
+}
+.observacao {
+    margin-bottom: 20px;
+}
+
+.observacao label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.observacao textarea {
+    width: 100%;
+    min-height: 70px;
+    padding: 8px;
+    font-size: 15px;
+    resize: vertical;
+}
+.amostras {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.amostras h2 {
+    margin-bottom: 20px;
+}
+.amostras {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(104, 166, 177, 0.25); /* verde claro e fraco */
+}
+
+.galeria-marmitas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.galeria-marmitas img {
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.info-prato {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.toggle-desc {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 26px;          /* seta maior */
+    font-weight: 600;
+    color: #2e8b57;
+    line-height: 1;
+    padding: 0 4px;
+    transition: transform 0.2s ease;
+}
+
+.descricao-prato {
+    font-size: 13px;
+    color: #555;
+    margin: 6px 0;
+    display: none;
+}
+
+.item.aberto .descricao-prato {
+    display: block;
+}
+
+.item.aberto .toggle-desc {
+    transform: rotate(180deg);
+}
