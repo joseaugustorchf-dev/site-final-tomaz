@@ -161,7 +161,7 @@ h1 {
 @media (max-width: 600px) {
 
     html {
-        font-size: 125%;
+        font-size: 300%;
     }
 
     body {
@@ -213,3 +213,4 @@ h1 {
         max-width: 340px;
     }
 }
+
