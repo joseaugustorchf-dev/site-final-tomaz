@@ -1,10 +1,8 @@
 * {
-* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-}
 }
 
 body {
@@ -42,7 +40,7 @@ h1 {
 
 .cliente input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     font-size: 16px;
 }
 
@@ -52,36 +50,69 @@ h1 {
 
 .item {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 0;
     border-bottom: 1px solid #ddd;
 }
 
+.info-prato {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
 .nome-item {
-    font-weight: bold;
+    font-weight: 600;
+}
+
+.toggle-desc {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: 600;
+    color: #2e8b57;
+    line-height: 1;
+    padding: 0 4px;
+    transition: transform 0.2s ease;
+}
+
+.descricao-prato {
+    font-size: 13px;
+    color: #555;
+    display: none;
+}
+
+.item.aberto .descricao-prato {
+    display: block;
+}
+
+.item.aberto .toggle-desc {
+    transform: rotate(180deg);
 }
 
 .preco-item {
     color: #555;
-    margin-right: 10px;
+    font-size: 15px;
 }
 
 .enviar {
     width: 100%;
     margin-top: 20px;
-    padding: 12px;
+    padding: 14px;
     font-size: 16px;
     background-color: #25d366;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 .enviar:hover {
     background-color: #1ebe5d;
 }
+
 .observacao {
     margin-bottom: 20px;
 }
@@ -94,24 +125,22 @@ h1 {
 
 .observacao textarea {
     width: 100%;
-    min-height: 70px;
-    padding: 8px;
+    min-height: 80px;
+    padding: 10px;
     font-size: 15px;
     resize: vertical;
 }
-.amostras {
-    margin-top: 40px;
-    text-align: center;
-}
 
-.amostras h2 {
-    margin-bottom: 20px;
-}
 .amostras {
     margin-top: 30px;
     padding: 15px;
     border-radius: 10px;
-    background-color: rgba(104, 166, 177, 0.25); /* verde claro e fraco */
+    background-color: rgba(104, 166, 177, 0.25);
+    text-align: center;
+}
+
+.amostras h2 {
+    margin-bottom: 15px;
 }
 
 .galeria-marmitas {
@@ -126,92 +155,61 @@ h1 {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-.info-prato {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
 
-.toggle-desc {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 26px;          /* seta maior */
-    font-weight: 600;
-    color: #2e8b57;
-    line-height: 1;
-    padding: 0 4px;
-    transition: transform 0.2s ease;
-}
+/* ===== MOBILE: TUDO MAIOR ===== */
 
-.descricao-prato {
-    font-size: 13px;
-    color: #555;
-    margin: 6px 0;
-    display: none;
-}
-
-.item.aberto .descricao-prato {
-    display: block;
-}
-
-.item.aberto .toggle-desc {
-    transform: rotate(180deg);
-
-}
 @media (max-width: 600px) {
 
+    html {
+        font-size: 125%;
+    }
+
+    body {
+        padding: 20px;
+    }
+
     .container {
-        padding: 24px;
+        max-width: 100%;
+        padding: 28px;
     }
 
     h1 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .nome-item {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .descricao-prato {
-        font-size: 15px;
-        line-height: 1.5;
+        font-size: 16px;
+        line-height: 1.6;
     }
 
     .preco-item {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .toggle-desc {
-        font-size: 28px; /* seta bem visível no dedo */
-    }
-
-    .item {
-        padding: 14px 0;
+        font-size: 32px;
     }
 
     input[type="checkbox"] {
-        transform: scale(1.4);
+        transform: scale(1.8);
     }
 
     .enviar {
-        font-size: 18px;
-        padding: 16px;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 14px;
     }
 
     .galeria-marmitas img {
         width: 100%;
-        max-width: 320px;
-    }
-}
-
-
-@media (max-width: 600px) {
-    .item {
-        gap: 6px;
+        max-width: 340px;
     }
 }
