@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     padding: 30px 15px;
+    zomm:2.8;
 }
 
 .container {
@@ -213,4 +214,5 @@ h1 {
         max-width: 340px;
     }
 }
+
 
