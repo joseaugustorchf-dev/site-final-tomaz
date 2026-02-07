@@ -157,4 +157,61 @@ h1 {
 
 .item.aberto .toggle-desc {
     transform: rotate(180deg);
+
+}
+@media (max-width: 600px) {
+
+    .container {
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .nome-item {
+        font-size: 18px;
+    }
+
+    .descricao-prato {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .preco-item {
+        font-size: 16px;
+    }
+
+    .toggle-desc {
+        font-size: 28px; /* seta bem visível no dedo */
+    }
+
+    .item {
+        padding: 14px 0;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.4);
+    }
+
+    .enviar {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    .galeria-marmitas img {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .item {
+        gap: 6px;
+    }
 }
